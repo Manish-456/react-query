@@ -1,8 +1,6 @@
-import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
 import { useQuery } from "react-query";
-
-const fetchHeroes = () => axios.get("http://localhost:3000/heroes");
+import { useHeroesData } from "../hooks/useHeroesData";
 
 export default function RQHeroes() {
   // const [refetchTime, setRefetchTime] = useState(3000);
@@ -16,24 +14,8 @@ export default function RQHeroes() {
     console.log(`Perform side effect after encountering error`, error);
   };
 
-  const { data, isLoading, isError, error, refetch, isFetching } = useQuery(
-    "heroes",
-    fetchHeroes,
-    {
-      cacheTime: 5 * 60 * 1000, // default caching time -> 5m
-      staleTime: 0, // default to 0
-      refetchOnMount: true, // default to true,
-      refetchOnWindowFocus: true, // default to true
-      // refetchInterval : refetchTime,
-      // enabled: false,
-      onSuccess,
-      onError,
-      select : ({data}) => { // select is a function that automatically receives an api data as an argument.
-        const heroNames = data.map(hero => hero.name);
-        return heroNames;
-      }  
-    }
-  );
+  const { data, isLoading, isError, error, refetch, isFetching } =
+    useHeroesData(onSuccess, onError);
 
   if (isLoading || isFetching) return <div>Loading...</div>;
 
