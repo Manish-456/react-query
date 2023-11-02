@@ -10,7 +10,7 @@ export default function Navbar() {
             <Link to={"/"}>Home</Link>
           </li>
           <li to={"/heroes"}>
-            <Link to={"/heroes"}>Heroes</Link>
+            <Link to={"/heroes"}>Traditional Heroes</Link>
           </li>
           <li>
             <Link to={"/rq-heroes"}>RQ Heroes</Link>
