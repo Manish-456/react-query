@@ -1,5 +1,4 @@
 import React from "react";
-import { useQuery } from "react-query";
 import { useHeroesData } from "../hooks/useHeroesData";
 
 export default function RQHeroes() {
