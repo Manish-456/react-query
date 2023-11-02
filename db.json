@@ -2,38 +2,50 @@
   "heroes": [
     {
       "id": 1,
-      "name": "Lallantop",
-      "alterEgo": "John Doe"
-    },
-    {
-      "id": 2,
       "name": "Shaktiman",
       "alterEgo": "Gangadhar Shastri"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Mukesh",
       "alterEgo": "Afsos Mukesh ab Iss duniya mein nahi raha"
     },
     {
       "name": "Superman",
-      "id": 4,
+      "id": 3,
       "alterEgo": "Dad"
     },
     {
       "name": "Batman",
-      "id": 5,
+      "id": 4,
       "alterEgo": "Bruce Wayne"
     },
     {
-      "name": "Spider-Man",
-      "id": 6,
-      "alterEgo": "Peter Parker"
+      "name": "Wonder Woman",
+      "id": 5,
+      "alterEgo": "Mother"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Ximeki"
     },
     {
-      "name": "Wonder Woman",
-      "id": 7,
-      "alterEgo": "Mother"
+      "id": 2,
+      "name": "Ajay Devgan"
+    },
+    {
+      "id": 3,
+      "name": "Mom"
+    },
+    {
+      "id": 4,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 5,
+      "name": "Dad"
     }
   ]
 }
