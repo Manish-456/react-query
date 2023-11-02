@@ -49,15 +49,63 @@
     }
   ],
 
-  "users" : [
+  "users": [
     {
-      "id" : "beluga@discord.com",
-      "serverId" : "Beluga"
+      "id": "beluga@discord.com",
+      "serverId": "Beluga"
     }
   ],
 
-  "servers" : [{
-    "id" : "Beluga",
-    "channel" : ["Beluga general", "Beluga speaks", "Beluga meets"]
-  }]
+  "servers": [
+    {
+      "id": "Beluga",
+      "channel": ["Beluga general", "Beluga speaks", "Beluga meets"]
+    }
+  ],
+  "colors" : [
+    {
+      "id" : "1",
+       "name" : "Red"
+    },
+    {
+      "id" : "2",
+       "name" : "Teal"
+    },
+    {
+      "id" : "3",
+       "name" : "Yellow"
+    },
+    {
+      "id" : "4",
+       "name" : "Cyan"
+    },
+    {
+      "id" : "5",
+       "name" : "Gray"
+    },
+    {
+      "id" : "7",
+       "name" : "Blue"
+    },
+    {
+      "id" : "8",
+       "name" : "Violet"
+    },
+    {
+      "id" : "9",
+       "name" : "Gray"
+    },
+    {
+      "id" : "10",
+       "name" : "Olive"
+    },
+    {
+      "id" : "11",
+      "name" : "Lime"
+    },
+    {
+      "id" : "12",
+      "name" : "Magneta"
+    }
+  ]
 }

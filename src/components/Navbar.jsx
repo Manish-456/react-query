@@ -15,6 +15,9 @@ export default function Navbar() {
           <li>
             <Link to={"/rq-heroes"}>RQ Heroes</Link>
           </li>
+          <li>
+            <Link to={"/colors"}>Colors</Link>
+          </li>
         </ul>
       </nav>
     </div>
