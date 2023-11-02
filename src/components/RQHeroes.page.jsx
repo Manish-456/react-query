@@ -1,5 +1,6 @@
 import React from "react";
 import { useHeroesData } from "../hooks/useHeroesData";
+import { Link } from "react-router-dom";
 
 export default function RQHeroes() {
   // const [refetchTime, setRefetchTime] = useState(3000);
@@ -26,16 +27,16 @@ export default function RQHeroes() {
       {/* <button type="button" onClick={refetch}>
         Fetch heroes
       </button> */}
-      {data?.map((heroName) => (
+      {/* {data?.map((heroName) => (
         <div key={heroName} className="lists">
           <h3>{heroName}</h3>
         </div>
-      ))}
-      {/* {data?.data.map((hero) => (
-        <div key={hero.id} className="lists">
-          <h3>{hero.name}</h3>
-        </div>
       ))} */}
+      {data?.data.map((hero) => (
+        <div key={hero.id} className="lists">
+          <Link to={`/rq-heroes/${hero.id}`}>{hero.name}</Link>
+        </div>
+      ))}
     </div>
   );
 }

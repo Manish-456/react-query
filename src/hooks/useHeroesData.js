@@ -17,10 +17,10 @@ export const useHeroesData = (onSuccess, onError) => {
           // enabled: false,
           onSuccess,
           onError,
-          select : ({data}) => { // select is a function that automatically receives an api data as an argument.
-            const heroNames = data.map(hero => hero.name);
-            return heroNames;
-          }  
+          // select : ({data}) => { // select is a function that automatically receives an api data as an argument.
+          //   const heroNames = data.map(hero => hero.name);
+          //   return heroNames;
+          // }  
         }
       );
 }

@@ -5,6 +5,7 @@ import Heroes from "./components/Heroes.page";
 import Home from "./components/Home.page";
 import Navbar from "./components/Navbar";
 import RQHeroes from "./components/RQHeroes.page";
+import RQHero from "./components/RQHero.page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/heroes" element={<Heroes />} />
         <Route path="/rq-heroes" element={<RQHeroes />} />
+        <Route path="/rq-heroes/:heroId" element={<RQHero />} />
       </Routes>
     </Router>
   );
