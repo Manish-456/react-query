@@ -8,6 +8,7 @@ import RQHeroes from "./components/RQHeroes.page";
 import RQHero from "./components/RQHero.page";
 import ParallelPage from "./components/Parallel.page";
 import DynamicParallel from "./components/DynamicParallel.page";
+import DependentQueriesPage from "./components/DependentQueries.page";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           path="/dynamic-parallel"
           element={<DynamicParallel heroId={[3, 5]} />}
         />
+        <Route path="/dependent-queries" element={<DependentQueriesPage email={"beluga@discord.com"} />} />
       </Routes>
     </Router>
   );

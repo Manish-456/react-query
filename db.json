@@ -47,5 +47,17 @@
       "id": 5,
       "name": "Dad"
     }
-  ]
+  ],
+
+  "users" : [
+    {
+      "id" : "beluga@discord.com",
+      "serverId" : "Beluga"
+    }
+  ],
+
+  "servers" : [{
+    "id" : "Beluga",
+    "channel" : ["Beluga general", "Beluga speaks", "Beluga meets"]
+  }]
 }
