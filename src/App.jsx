@@ -9,7 +9,8 @@ import RQHero from "./components/RQHero.page";
 import ParallelPage from "./components/Parallel.page";
 import DynamicParallel from "./components/DynamicParallel.page";
 import DependentQueriesPage from "./components/DependentQueries.page";
-import InfiniteQueriesPage from "./components/InfiniteQueries.page";
+import PaginatedQueries from "./components/PaginatedQueries";
+
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           element={<DynamicParallel heroId={[3, 5]} />}
         />
         <Route path="/dependent-queries" element={<DependentQueriesPage email={"beluga@discord.com"} />} />
-        <Route path="/colors" element={<InfiniteQueriesPage />} />
+        <Route path="/colors" element={<PaginatedQueries />} />
       </Routes>
     </Router>
   );

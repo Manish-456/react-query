@@ -5,7 +5,7 @@ import { useQuery } from "react-query";
 const fetchColors = (pageNum) =>
   axios.get(`http://localhost:3000/colors?_limit=2&_page=${pageNum}`);
 
-export default function InfiniteQueriesPage() {
+export default function PaginatedQueries() {
   const [pageNumber, setPageNumber] = useState(1);
 
   const { isLoading, error, data } = useQuery(["colors", pageNumber], () => fetchColors(pageNumber), {
