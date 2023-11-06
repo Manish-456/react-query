@@ -24,6 +24,46 @@
       "name": "Wonder Woman",
       "id": 5,
       "alterEgo": "Mother"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Bary Alan",
+      "id": 6
+    },
+    {
+      "name": "Spiderman",
+      "alterEgo": "Peter Parker",
+      "id": 7
+    },
+    {
+      "name": "CatWomen",
+      "alterEgo": "Selina Kyle",
+      "id": 8
+    },
+    {
+      "name": "Me",
+      "alterEgo": "Rajesh Hamal",
+      "id": 9
+    },
+    {
+      "name": "kljlkjlkj",
+      "alterEgo": "Rsdfsdf",
+      "id": 10
+    },
+    {
+      "name": "asdadsad",
+      "alterEgo": "jimmy jimmy",
+      "id": 11
+    },
+    {
+      "name": "frank",
+      "alterEgo": "per",
+      "id": 12
+    },
+    {
+      "name": "franksdf",
+      "alterEgo": "persdf",
+      "id": 13
     }
   ],
   "friends": [
@@ -48,60 +88,62 @@
       "name": "Dad"
     }
   ],
-
   "users": [
     {
       "id": "beluga@discord.com",
       "serverId": "Beluga"
     }
   ],
-
   "servers": [
     {
       "id": "Beluga",
-      "channel": ["Beluga general", "Beluga speaks", "Beluga meets"]
+      "channel": [
+        "Beluga general",
+        "Beluga speaks",
+        "Beluga meets"
+      ]
     }
   ],
-  "colors" : [
+  "colors": [
     {
-      "id" : "1",
-       "name" : "Red"
+      "id": "1",
+      "name": "Red"
     },
     {
-      "id" : "2",
-       "name" : "Teal"
+      "id": "2",
+      "name": "Teal"
     },
     {
-      "id" : "3",
-       "name" : "Yellow"
+      "id": "3",
+      "name": "Yellow"
     },
     {
-      "id" : "4",
-       "name" : "Cyan"
+      "id": "4",
+      "name": "Cyan"
     },
     {
-      "id" : "5",
-       "name" : "Gray"
+      "id": "5",
+      "name": "Gray"
     },
     {
-      "id" : "7",
-       "name" : "Blue"
+      "id": "7",
+      "name": "Blue"
     },
     {
-      "id" : "8",
-       "name" : "Violet"
+      "id": "8",
+      "name": "Violet"
     },
     {
-      "id" : "9",
-       "name" : "Gray"
+      "id": "9",
+      "name": "Gray"
     },
     {
-      "id" : "10",
-       "name" : "Olive"
+      "id": "10",
+      "name": "Olive"
     },
     {
-      "id" : "11",
-      "name" : "Lime"
+      "id": "11",
+      "name": "Lime"
     }
   ]
 }
