@@ -18,6 +18,9 @@ export default function Navbar() {
           <li>
             <Link to={"/colors"}>Colors</Link>
           </li>
+          <li>
+            <Link to={"/infinite-colors"}>Inf. Colors</Link>
+          </li>
         </ul>
       </nav>
     </div>

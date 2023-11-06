@@ -10,6 +10,7 @@ import ParallelPage from "./components/Parallel.page";
 import DynamicParallel from "./components/DynamicParallel.page";
 import DependentQueriesPage from "./components/DependentQueries.page";
 import PaginatedQueries from "./components/PaginatedQueries";
+import InfiniteQuery from "./components/InfiniteQueries.page";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         />
         <Route path="/dependent-queries" element={<DependentQueriesPage email={"beluga@discord.com"} />} />
         <Route path="/colors" element={<PaginatedQueries />} />
+        <Route path="/infinite-colors" element={<InfiniteQuery />} />
       </Routes>
     </Router>
   );
