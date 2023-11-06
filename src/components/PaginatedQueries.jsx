@@ -1,9 +1,10 @@
-import axios from "axios";
 import { useState } from "react";
 import { useQuery } from "react-query";
+import { request } from "../utils/axios-utils";
 
-const fetchColors = (pageNum) =>
-  axios.get(`http://localhost:3000/colors?_limit=2&_page=${pageNum}`);
+const fetchColors = (pageNum) => request({
+  url : `/colors?_limit=2&_page=${pageNum}`
+});
 
 export default function PaginatedQueries() {
   const [pageNumber, setPageNumber] = useState(1);

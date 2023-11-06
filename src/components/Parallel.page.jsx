@@ -1,13 +1,18 @@
-import axios from "axios";
-import React from "react";
 import { useQuery } from "react-query";
+import { request } from "../utils/axios-utils";
 
-const fetchHeroes = () => axios.get("http://localhost:3000/heroes");
+const fetchHeroes = () =>
+  request({
+    url: `/heroes`,
+  });
 
-const fetchFriends = () => axios.get("http://localhost:3000/friends");
+const fetchFriends = () =>
+  request({
+    url: `/friends`,
+  });
 
 export default function ParallelPage() {
-  const { data: heroesData } = useQuery("heroes", fetchHeroes);
-  const { data: friendsData} = useQuery("friends", fetchFriends);
-  return <div>Parallel Queries PAge</div>;
+  useQuery("heroes", fetchHeroes);
+  useQuery("friends", fetchFriends);
+  return <div>Parallel Queries Page</div>;
 }

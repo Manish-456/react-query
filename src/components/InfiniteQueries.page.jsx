@@ -1,9 +1,11 @@
-import axios from "axios";
 import { Fragment } from "react";
 import { useInfiniteQuery } from "react-query";
+import { request } from "../utils/axios-utils";
 
 const fetchColors = ({ pageParam = 1 }) =>
-  axios.get(`http://localhost:3000/colors?_limit=2&_page=${pageParam}`);
+  request({
+    url : `/colors?_limit=2&_page=${pageParam}`
+  });
 
 export default function InfiniteQuery() {
   const { isLoading, error, isError, data, isFetchingNextPage, isFetching , hasNextPage, fetchNextPage } = useInfiniteQuery(

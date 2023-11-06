@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { request } from "../utils/axios-utils";
 
 export default function Heroes() {
   const [isLoading, setIsLoading] = useState(false);
@@ -8,8 +8,9 @@ export default function Heroes() {
 
   useEffect(() => {
     setIsLoading(true);
-    axios
-      .get("http://localhost:3000/heroes")
+    request({
+      url : '/heroes'
+    })
       .then((res) => {
         setData(res.data);
       })
@@ -26,7 +27,7 @@ export default function Heroes() {
   return (
     <div>
       <h2>Super Heroes</h2>
-      {data.map((hero) => (
+      {data?.map((hero) => (
         <div key={hero.id} className="lists">
             <h3>{hero.name}</h3>
             <p>{hero.alterEgo}</p>

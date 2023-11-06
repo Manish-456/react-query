@@ -41,34 +41,24 @@
       "id": 8
     },
     {
-      "name": "Me",
-      "alterEgo": "Rajesh Hamal",
+      "name": "Aquaman",
+      "alterEgo": "Arthur Curry",
       "id": 9
     },
     {
-      "name": "kljlkjlkj",
-      "alterEgo": "Rsdfsdf",
+      "name": "Hello world",
+      "alterEgo": "Programming",
       "id": 10
     },
     {
-      "name": "asdadsad",
-      "alterEgo": "jimmy jimmy",
+      "name": "Dhoop",
+      "alterEgo": "Jadu",
       "id": 11
     },
     {
-      "name": "frank",
-      "alterEgo": "per",
+      "name": "Mukesh",
+      "alterEgo": "Dalle",
       "id": 12
-    },
-    {
-      "name": "franksdf",
-      "alterEgo": "persdf",
-      "id": 13
-    },
-    {
-      "name": "Aquaman",
-      "alterEgo": "Arthur Curry",
-      "id": 14
     }
   ],
   "friends": [

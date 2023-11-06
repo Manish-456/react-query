@@ -1,7 +1,10 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
-import axios from "axios";
+import { request } from "../utils/axios-utils";
 
-const fetchHeroes = () => axios.get("http://localhost:3000/heroes");
+// const fetchHeroes = () => axios.get("http://localhost:3000/heroes");
+
+const fetchHeroes = () => request({url : "/heroes", method : "GET"});
+
 export const useHeroesData = (onSuccess, onError) => {
   return useQuery("heroes", fetchHeroes, {
     cacheTime: 5 * 60 * 1000, // default caching time -> 5m
@@ -20,7 +23,8 @@ export const useHeroesData = (onSuccess, onError) => {
 };
 
 const addHeroData = (values) => {
-  return axios.post(`http://localhost:3000/heroesd`, values);
+  // return axios.post(`http://localhost:3000/heroes`, values);
+  return request({url : '/heroes', method : 'POST', data : values})
 };
 export const useAddHeroData = () => {
   const queryClient = useQueryClient();

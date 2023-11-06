@@ -1,8 +1,9 @@
-import axios from "axios";
 import { useQueries } from "react-query";
+import { request } from "../utils/axios-utils";
 
-const fetchHeroes = (heroId) =>
-  axios.get(`http://localhost:3000/heroes/${heroId}`);
+const fetchHeroes = (heroId) => request({
+  url : `/heroes/${heroId}`
+})
 
 export default function DynamicParallel({ heroId }) {
   useQueries(
